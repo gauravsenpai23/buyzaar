@@ -28,7 +28,9 @@
 <!--        <mapping class="com.example.model.YourEntityClass" />-->
 
         <!-- You can also use mapping files like this -->
-        <!-- <mapping resource="com/example/model/YourEntityClass.hbm.xml"/> -->
+         <mapping class="entities.Category"/>
+         <mapping class="entities.Product"/>
+         <mapping class="entities.User"/>
 
     </session-factory>
 </hibernate-configuration>
