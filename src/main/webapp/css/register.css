@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(135deg, #f0f4f7, #d9e2ec); /* Light gradient */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.icon-size {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-outline-success:hover,
+.btn-outline-warning:hover {
+    color: #fff;
+}
