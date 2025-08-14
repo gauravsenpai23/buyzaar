@@ -14,7 +14,6 @@ public class UserDao {
         this.factory=factory;
     }
 
-    //getuser by email and password
     public User getUserByEmailAndPassword(String email,String password)
     {
         User user=null;
@@ -34,10 +33,5 @@ public class UserDao {
             e.printStackTrace();
         }
         return user;
-
-
-
     }
-
-
 }

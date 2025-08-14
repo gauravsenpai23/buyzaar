@@ -1,13 +1,40 @@
+# =================================================================================
+# Build System & Compiled Output
+# =================================================================================
+
+# Maven, Gradle, and other build tool output directories
 target/
+build/
+out/
+bin/
+
+# Compiled Java class files and archives
+*.class
+*.jar
+*.war
+*.ear
+
+# Exceptions for the Maven wrapper (from your original file, this is good)
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+
+# =================================================================================
+# IDE & Editor Configuration
+# =================================================================================
+
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# It's generally safest to ignore the entire directory.
+# Your project can be re-imported from pom.xml or build.gradle.
+.idea/
+
+# Your original rules are good but covered by the above.
+# If you must commit some .idea files, use this more specific list:
+# .idea/modules.xml
+# .idea/jarRepositories.xml
+# .idea/compiler.xml
+# .idea/libraries/
 *.iws
 *.iml
 *.ipr
@@ -27,12 +54,42 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
-.DS_Store
+
+# =================================================================================
+# Local Server & Runtime
+# =================================================================================
+
+# IntelliJ's SmartTomcat plugin local server configuration (IMPORTANT)
+.SmartTomcat/
+
+
+# =================================================================================
+# Logs, Temp Files, and OS Files
+# =================================================================================
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+
+# Operating System generated files
+.DS_Store          # Mac
+Thumbs.db          # Windows
+ehthumbs.db        # Windows
+._*                # Mac
+.Spotlight-V100    # Mac
+.Trashes           # Mac
+
+# =================================================================================
+# Secrets & Sensitive Information (Best Practice)
+# =================================================================================
+# Add any files that contain passwords, API keys, or other secrets.
+#
+# .env
+# local.properties

@@ -8,7 +8,7 @@
 
         <!-- JDBC connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/buyzaar?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/buyzaar?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root</property>
 
@@ -25,12 +25,12 @@
 
         <!-- Specify annotated classes or mapping files -->
         <!-- Example of annotated class -->
-<!--        <mapping class="com.example.model.YourEntityClass" />-->
+        <!--        <mapping class="com.example.model.YourEntityClass" />-->
 
         <!-- You can also use mapping files like this -->
-         <mapping class="entities.Category"/>
-         <mapping class="entities.Product"/>
-         <mapping class="entities.User"/>
+        <mapping class="entities.Category"/>
+        <mapping class="entities.Product"/>
+        <mapping class="entities.User"/>
 
     </session-factory>
 </hibernate-configuration>

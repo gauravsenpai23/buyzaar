@@ -37,4 +37,8 @@ public class Product {
         this.pQuantity = pQuantity;
         this.category = category;
     }
+    public int getPriceAfterApplyDiscount() {
+        int d=(int) ((this.getPDiscount()/100.0) * this.getPPrice());
+        return this.getPPrice() - d;
+    }
 }
